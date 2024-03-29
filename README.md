@@ -1,25 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Basic Requirements:
 
-Things you may want to cover:
+* Clone the project:
+	git clone https://github.com/vijaysoni88/string_pattern_calculator.git
 
-* Ruby version
+* Ruby version:
+	3.0.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# string_pattern_calculator
+* How to run the test suite: 
+	Run rspec
