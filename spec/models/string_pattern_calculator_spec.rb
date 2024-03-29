@@ -8,6 +8,11 @@ RSpec.describe "StringPatternCalculator", type: :model do
       allow(string_pattern_calculator).to receive(:call).and_return(0)
       expect(string_pattern_calculator.call('')).to eq(0)
     end
+
+    it 'returns the number for a single number' do
+      allow(string_pattern_calculator).to receive(:call).with('1').and_return(1)
+      expect(string_pattern_calculator.call('1')).to eq(1)
+    end
   end
 
   def string_pattern_calculator(str)
