@@ -13,9 +13,14 @@ RSpec.describe "StringPatternCalculator", type: :model do
       allow(string_pattern_calculator).to receive(:call).with('1').and_return(1)
       expect(string_pattern_calculator.call('1')).to eq(1)
     end
+
+    it 'returns the sum for two numbers' do
+      allow(string_pattern_calculator).to receive(:call).with('1,5').and_return(6)
+      expect(string_pattern_calculator.call('1,5')).to eq(6)
+    end
   end
 
   def string_pattern_calculator(str)
-    str.length
+    str.split(',').map(&:to_i).sum
   end
 end
